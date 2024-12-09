@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #575757, #dcffff);
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      text-align: center;
+      padding: 2em 1em;
+      background: linear-gradient(135deg, #d6cfcf, #04a5c280);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0.2em 0;
+    }
+    header p {
+      margin: 0.5em 0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
+    .section {
+      margin-bottom: 2em; /* ลดช่องว่างระหว่าง sections */
+    }
+    
+    /* Section Title */
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      text-align: center;
+      color: #75fdd0;
+    }
+
+    /* About Section */
+    .about {
+      text-align: center;
+      background: white;
+      border-radius: 12px;
+      padding: 2em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2em; /* เพิ่มระยะห่างด้านล่าง */
+    }
+
+    /* Education Section */
+    .education {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .education ul {
+      list-style: none;
+      padding: 0;
+    }
+    .education ul li {
+      margin: 0.5em 0;
+      font-size: 1.1em;
+    }
+
+    /* Skills Section */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+      background: white;
+      border-radius: 12px;
+      padding: 1.5em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .skills .skill {
+      background: #667eea;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1em; /* ลดช่องว่างระหว่างการ์ด */
+      margin-top: 1em; /* ลดระยะห่างด้านบนของโปรเจกต์ */
+    }
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1em;
+      width: calc(33.333% - 1em);
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .project-card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1em;
+    }
+    .project-card h3 {
+      margin: 0.5em 0;
+      color: #667eea;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+    .social-links a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    .social-links img {
+      width: 30px;
+      height: 30px;
+    }    
+
+    /* Contact Section */
+    .contact {
+      text-align: center;
+      margin-top: 2em;
+      padding: 1.5em;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #04a5c280;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t39.30808-6/270510518_4703317396427429_4130800796347992793_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeExCMc87Ghy03_oGbWf-4Nts55n7mUOhoOznmfuZQ6GgxDVuiqqTWaL3lioKcV194bsj2u2OP7ETa0yNjrrn1Xt&_nc_ohc=9Zafv4N1RjMQ7kNvgFDAmPw&_nc_zt=23&_nc_ht=scontent.fbkk3-4.fna&_nc_gid=AB5kWv0_qcxM8oelYShsx6j&oh=00_AYAR0j6bVuUGmQ16qfL82yZskz6gpRXBlAzrbUqw2AQf2Q&oe=675D2BF7" alt="img" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Your journey into my world of creativity!</p>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- About Section -->
+    <section class="section about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <strong>Pakphum Siriwattanakul</strong>, a passionate developer and designer. I love creating engaging user experiences and solving challenging problems.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Software engineering</strong> - University of Phayao (2023-)</li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills">
+      <h2>Skills</h2>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Python</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="https://cdn.discordapp.com/attachments/1315780276026212554/1315795223821160550/Z.png?ex=6758b54b&is=675763cb&hm=5c17363c5c2b785b2d6ee180b59161d0d61526174dbbb532215868770e9e6961&" alt="Project 1">
+          <h3>Project One</h3>
+          <p>ecommerce-store about T-shirt.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://cdn.discordapp.com/attachments/1315780276026212554/1315795241428713697/9k.png?ex=6758b54f&is=675763cf&hm=0ea3083f1eca1fc52db7f1074f3367b0ee5093a9d24d8f684af3d667a83a841f&" alt="Project 2">
+          <h3>Project Two</h3>
+          <p>ecommerce-store about basic first aid.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+      <h2>Contact Me</h2>
+      <div class="social-links">
+        <a href="https://web.facebook.com/koonmeirujugpm" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/k_y1986/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/66022848" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+        </a>
+    </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Ken. Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
